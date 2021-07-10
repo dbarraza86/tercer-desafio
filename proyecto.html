@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+   <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#encabezado{ 
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    grid-template-rows: 200px;
+    grid-template-areas: "logo1 titulo buscador";
+    align-items: center;
+    text-align: center;
+    background-color: rgba(245, 240, 240, 0.938);
+}
+#logo{ 
+    grid-area: logo1;
+}
+img{
+    max-width: 100%;
+    width: 65%;
+    height: 65%;
+}
+#titulo{ 
+    grid-area: titulo;
+    }
+#buscador{ 
+    grid-area: buscador;
+    max-width: 100%;
+    height: 100%;
+    }
+#centro{ 
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 600px;
+    column-gap: 25px;
+    grid-template-areas: "mapa fotos";
+    align-items: stretch;
+    text-align: center;
+    background-color: rgba(245, 240, 240, 0.938);
+    justify-content: center;
+    
+}
+#mapa{ 
+    grid-area: mapa;
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    }
+
+#fotos{ 
+    grid-area: fotos;
+    max-width: 100%;
+    width: 100%;
+    height: 600px;
+    border: 50px solid rgba(245, 240, 240, 0.938);
+    
+}
+#nutri{ 
+    max-width: 100%;
+    width: 100%;
+    height: 550px;
+    }
+#pscico{ 
+    max-width: 100%;
+    width: 100%;
+    height: 550px;
+    }
+#fono{ 
+    max-width: 100%;
+    width: 100%;
+    height: 550px;
+    }
+
+#pie{ 
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100px;
+    grid-template-areas: "face correo telefono turnos";
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(226, 225, 225),lawngreen);
+    
+}
+#face{ 
+    max-width: 100%;
+    width: 100%;
+        }
+#correo{ 
+    max-width: 100%;
+    width: 100%;
+            }
+#whatsapp{ 
+    max-width: 100%;
+    width: 100%;
+    
+    
+    }
+    #turnos{ 
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    }
+h1{
+    font-size:50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+  }
+
+  h2{
+    font-size:30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+  }
+  h3{
+    font-size:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+  }
+ 
+    </style>
+</head>
+<body>
+    <div id="encabezado">
+        <div id="logo">
+<img src="imagenes/logo.jpg" alt="">
+        </div>
+<div id="titulo">
+<h1>CRECIENDO JUNTOS <br> ACOMPAÑAMIENTO ESCOLAR</h1>
+</div>
+<div id="buscador">
+    <nav class="navbar navbar-light bg-light justify-content-between navbar navbar-light">
+        <a class="navbar-brand"></a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="BUSCAR" placeholder="" aria-label="BUSCADOR">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">BUSCAR</button>
+        </form>
+      </nav>
+</div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <h2> CRECIENDO JUNTOS </h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <br><h2> MENU</h2>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="quienessomo.html"> QUIENES SOMOS</a></li>
+                  <li><a class="dropdown-item" href="nuestrosprofesionales.html"> NUESTROS PROFESIONALES</a></li>
+                  <li><a class="dropdown-item" href="turnos.html"> TURNOS</a></li>
+                  <li><a class="dropdown-item" href="sucursales.html"> SUCURSALES</a></li>
+                  <li><a class="dropdown-item" href="contactanos.html"> AYUDANOS A MEJORAR</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div id="centro">
+    <div id="mapa">
+    <br><h2> ENTONTRANOS EN  </h2> <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.2058272064764!2d-65.20322358495676!3d-26.833404983161802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c05405c2fbf%3A0x71c183bca7299e98!2sCris%C3%B3stomo%20Alvarez%20220%2C%20T4000CHF%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1622126256722!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <br><br><br>
+    <section id="telefono">  <h2> TELEFONO <br> 0381-156720393  </h2> </section>    
+</div>
+<div id="fotos">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id="nutri" src="imagenes/nutricion.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img id="pscico" src="imagenes/pscicologa.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img id="fono" src="imagenes/fono.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+</div>
+    </div>
+<footer id="pie">
+    <div id="face"> 
+        <a href= " https://www.facebook.com/Creciendo-Juntos-acompa%C3%B1amiento-escolar-324695494801146" > <h3> FACEBOOK</h3> </a> 
+       </div>
+        <div id="correo">
+        <h3> CORREO:
+            <br> <br> creciendojuntoselmanantial@hotmail.com </h3> 
+       </div>
+       
+       <div id="turnos">
+       <a href="turnos.html"> <h3> SOLICITA TU TURNO</h3> </a>
+       </div>
+       
+       <div id="whatsapp">
+           <h3>TELEFONO</h3>
+           <br>
+        <h3> 0381-156720393 </h3> 
+       </div>
+       
+       
+    
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

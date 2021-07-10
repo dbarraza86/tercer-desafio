@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+  background-color: rgba(245, 240, 240, 0.938);
+}
+
+#grilla{ 
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 600px;
+    grid-template-areas: "nutricion fono pscico apoyo pscicop";
+    align-items: center;
+    text-align: center;
+   justify-content: space-around;
+   
+}
+
+.carduno { 
+  grid-area: nutricion;
+  height: 500px;
+  
+}
+
+.carddos { 
+  grid-area: fono;
+  height: 500px;
+  
+}
+
+.cardtres { 
+  grid-area: pscico;
+  height: 500px;
+  
+}
+
+.cardcuatro { 
+  grid-area: apoyo;
+  height: 500px;
+  
+}
+
+.cardcinco { 
+  grid-area: pscicop;
+  height: 500px;
+  
+}
+
+h6 {
+    font-size:15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+  }
+  h5 {
+    font-size:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+  }
+
+h3{
+    font-size:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+  }
+</style>
+</head>
+<body>
+  <div id="grilla"> 
+  <div class="carduno" style="width: 14rem;">
+    <img src="imagenes/sil.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Lic. Silvana Barraza</h5>
+      <p class="card-text"> <h6>  Diplomada en Obesidad y Diabetes <br>
+        Antropometrista ISAK II <br>
+        Nutrición clínica y deportiva <br>
+        Educación nutricional <br>
+        Alimentación Saludable</p> </h6>
+      <a href="turnos.html" class="btn btn-primary" > <h3> TURNOS</h3> </a>
+    </div>
+  </div>
+  <div class="carddos" style="width: 14rem;">
+    <img src="imagenes/fono.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Lic. Fernanda Isa</h5>
+      <p class="card-text"> <br><h6>  Fonoaudiologia <br>
+        Niños y Adolescentes <br>
+        Obras Sociales y Privado </h6> <br><br> <br>
+      <a href="turnos.html" class="btn btn-primary" > <h3> TURNOS</h3> </a>
+    </div>
+  </div>
+  
+  <div class="cardtres" style="width: 14rem;">
+    <img src="imagenes/pscicologa.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Lic. Mariana Perez </h5>
+      <p class="card-text"> <br><h6>  Pscicologia <br>
+        Niños- Adolescentes - Adultos <br>
+        Obras Sociales y Privado </h6> <br><br>
+      <a href="turnos.html" class="btn btn-primary">  <h3> TURNOS</h3> </a>
+    </div>
+  </div>
+  
+  <div class="cardcuatro" style="width: 14rem;">
+    <img src="imagenes/apoyo escolar.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> Prof. Jovana Salas </h5>
+      <p class="card-text"> <br><h6>  Pscicologia <br>
+        Apoyo Escolar <br>
+        Nivel EGB1 y EGB3 <br> Grupos Reducidos </h6> <br><br>
+      <a href="turnos.html" class="btn btn-primary">  <h3> TURNOS</h3> </a>
+    </div>
+  </div>
+
+  <div class="cardcinco" style="width: 14rem;">
+    <img src="imagenes/pscicopedagoga.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> Ana Sofia Ovejero </h5>
+      <p class="card-text"> <br><h6>  Pscicopedagogia <br>
+        Niños- Adolescentes <br>
+        Obras Sociales y Privado <br> <br> </h6> <br><br>
+      <a href="turnos.html" class="btn btn-primary">  <h3> TURNOS</h3> </a>
+    </div>
+  </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
